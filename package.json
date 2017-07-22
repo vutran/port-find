@@ -1,0 +1,30 @@
+{
+  "name": "port-find",
+  "version": "0.0.0",
+  "description": "Retrieve active connections given a remote port",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "prepublish": "npm run build",
+    "jest": "jest --coverage --verbose",
+    "test": "npm run jest"
+  },
+  "author": "Vu Tran <vu@vu-tran.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-netstat": "^1.4.2"
+  },
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.2",
+    "prettier": "^1.5.3"
+  },
+  "lint-staged": {
+    "{*.js,{__mocks__,__tests__}/src/**/*.{js,ts}{,x}}": [
+      "prettier --write --tab-width 4 --single-quote --trailing-comma es5",
+      "git add"
+    ]
+  }
+}
