@@ -1,6 +1,6 @@
 {
   "name": "port-find",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Retrieve active connections given a remote port",
   "main": "index.js",
   "scripts": {
